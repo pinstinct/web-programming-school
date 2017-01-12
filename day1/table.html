@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Table</title>
+  <style>
+  /* table의 경계선을 나타냅니다. */
+  table {
+    border-collapse: collapse;
+  }
+  table, th, td {
+    border: 1px solid black;
+  }
+  table > colgroup {
+    background: #f3f3f3;
+    border-right: 3px double #333
+  }
+  </style>
+</head>
+<body>
+  <h3>테이블 기본 구조</h3>
+  <table>
+    <tr>
+      <th>이름</th>
+      <th>나이</th>
+      <th>점수</th>
+    </tr>
+    <tr>
+      <td>철수</td>
+      <td>23세</td>
+      <td>70점</td>
+    </tr>
+    <tr>
+      <td>영희</td>
+      <td>21세</td>
+      <td>89점</td>
+    </tr>
+  </table>
+
+  <!-- 가로로 셀 병합 -->
+  <h3>colspan</h3>
+  <table>
+    <tr>
+      <td>a</td>
+      <td>b</td>
+    </tr>
+    <tr>
+      <td colspan="2">c</td>
+    </tr>
+  </table>
+
+  <!-- 세로로 셀 병합 -->
+  <h3>rowspan</h3>
+  <table>
+    <tr>
+      <td rowspan="3">a</td>
+      <td>b</td>
+    </tr>
+    <tr>
+      <td>c</td>
+    </tr>
+    <tr>
+      <td>d</td>
+    </tr>
+  </table>
+
+  <h3>colgroup</h3>
+  <table>
+    <caption></caption>
+    <colgroup>
+      <col span="3" />
+    </colgroup>
+    <tr>
+      <th>이름</th>
+      <th>나이</th>
+      <th>성별</th>
+      <th>100M 달리기</th>
+      <th>윗몸 일으키기</th>
+    </tr>
+     <tr>
+       <td>홍길동</td>
+       <td>22세</td>
+       <td>남</td>
+       <td>15.25</td>
+       <td>29</td>
+     </tr>
+     <tr>
+       <td>황진이</td>
+       <td>20세</td>
+       <td>여</td>
+       <td>16.12</td>
+       <td>41</td>
+     </tr>
+     <tr>
+       <td colspan="3">참가자 평균</td>
+       <td>15.7</td>
+       <td>35</td>
+     </tr>
+  </table>
+
+  <h3>행의 구조화</h3>
+  <!-- thead와 tfoot은 table에서 한 번만 선언 -->
+  <table>
+    <thead>
+      <tr>
+        <th>이름</th>
+        <th>나이</th>
+        <th>성별</th>
+        <th>성적</th>
+        <th>메모</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>홍길동</td>
+        <td>22세</td>
+        <td>남자</td>
+        <td>98점</td>
+        <td>잘생김</td>
+      </tr>
+    </tbody>
+    <tbody>
+      <tr>
+        <td>김춘향</td>
+        <td>19세</td>
+        <td>여자</td>
+        <td>99점</td>
+        <td>예쁨</td>
+      </tr>
+    </tbody>
+    <!-- 일반적으로 도표 전체의 합계나 결과를 표시 -->
+    <tfoot>
+      <tr>
+        <td colspan=3"">평균</td>
+        <td>87</td>
+        <td>0</td>
+      </tr>
+    </tfoot>
+  </table>
+
+</body>
+</html>

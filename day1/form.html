@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Form</title>
+</head>
+<body>
+  <h3>From 요소</h3>
+    <form action="" method="get">
+      <label for="username">ID</label>
+      <input type="text" name="username">
+    </form>
+
+  <h3>input 태그</h3>
+  <form method="get">
+    <input type="text" id="username">
+    <input type="password" id="pwd">
+    <input type="radio" id="userradio">
+    <input type="checkbox" id="usercheckbox">
+    <input type="button">
+    <input type="file" id="userfile">
+    <input type="submit">
+    <!-- 초기화 -->
+    <input type="reset">
+    <!-- 서버에 전송할때, 유저에게 노출하고 싶지 않을 경우 사용  -->
+    <!-- file://your/path/form.html?hidden-key=hidden-value -->
+    <input type="hidden" name="hidden-key" value="hidden-value">
+  </form>
+
+  <h3>input 태그 속성</h3>
+  <form>
+    <!--
+    disabled : 사용할 수 없는 텍스트
+    readonly : 읽을 수 만 있는 텍스트
+    둘의 실제 동작은 동일
+     -->
+    <input type="text" value="disalbe" disabled>
+    <input type="text" value="readonly" readonly>
+    <!-- 비어있으면 전송 되지 않음 -->
+    <input type="text" required>
+    <input type="text" placeholder="비밀번호를 입력하세요">
+    <input type="text" size="5" placeholder="size: 5">
+    <input type="text" maxlength="10" placeholder="최대 10자 입력 가능">
+    <!-- 복수 응답이 필요할 때 checkbox 사용 -->
+    <input type="checkbox" checked="checked">
+    <!-- name 속성이 동일한 radio 타입끼리는 동시에 선택 불가능 -->
+    <input type="radio" id="female" name="gender" checked="checked">
+    <input type="radio" id="male" name="gender">
+    <input type="submit" value="전송">
+  </form>
+
+  <h3>label 태그</h3>
+  <!-- label 태그 안에 form 요소를 쓰는 방식 -->
+  <label>ID <input type="text"></label>
+
+  <!-- label의 for 속성 값과 form의 id 속성 값을 일치시켜 그룹화 -->
+  <label for="username">Username</label>
+  <input type="text" id="username">
+
+  <h3>select 태그</h3>
+  <!-- value 속성에 서버로 보낼 때 값을 지정 -->
+  <select name="number" id="select-id">
+    <option value="1">First</option>
+    <option value="2">Second</option>
+    <option value="3">Third</option>
+    <option value="4">Fourth</option>
+  </select>
+
+  <h3>select 태그 multiple 속성</h3>
+  <!--
+  기본적으로 select 요소는 option의 값을 한 개만 선택할 수 있다.
+  multiple 속성을 가질 경우, ctr(or cmd)키를 이용해 여러개의 값을 선택할 수 있다.
+   -->
+  <select multiple="multiple">
+    <option value="apple">Apple</option>
+    <option value="banana">Banana</option>
+    <option value="orange">Orange</option>
+  </select>
+
+  <h3>select 태그 size 속성</h3>
+  <select size="2">
+    <option value="apple">Apple</option>
+    <option value="banana">Banana</option>
+    <option value="orange">Orange</option>
+  </select>
+
+  <h3>select 태그 optgroup</h3>
+  <!-- option을 그룹화하여 보여준다 -->
+  <select>
+    <optgroup label="Fruits">
+      <option value="apple">Apple</option>
+      <option value="banana">Banana</option>
+      <option value="orange">Orange</option>
+    </optgroup>
+    <optgroup label="Colors">
+      <option value="red">Red</option>
+      <option value="blue">Blue</option>
+      <option value="green">Green</option>
+    </optgroup>
+  </select>
+
+  <h3>button 태그</h3>
+  <button type="submit">submit type button</button>
+  <button type="reset">reset type button</button>
+  <button type="button">button type button</button>
+
+  <h3>fieldset, legend 태그</h3>
+  <fieldset>
+    <!-- legend는 fieldset의 가장 첫번째에 두어야 함 -->
+    <legend>Login</legend>
+      <label>username: <input type="text"></label>
+      <label>password: <input type="password"></label>
+    <fieldset>
+      <legend>nested fieldset</legend>
+      <button type="submit">Login</button>
+    </fieldset>
+  </fieldset>
+
+</body>
+</html>
