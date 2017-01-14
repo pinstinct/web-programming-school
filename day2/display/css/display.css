@@ -1,0 +1,44 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+div {
+  height: 50px;
+  border: 1px solid blue;
+  margin-bottom: 30px;
+}
+#block {
+  display: block;
+  background-color: grey;
+}
+#inline {
+  display: inline;
+  background-color: pink;
+}
+#inline-block {
+  display: inline-block;
+  height: 50px;
+  padding-top: 10px;
+  margin: 3px;
+  background-color: green;
+}
+#none {
+  display: none;
+  background-color: purple;
+}
+#hidden {
+  visibility: hidden;
+  background-color: red;
+}
+#overflow-visible {
+  overflow: visible;
+}
+#overflow-hidden {
+  overflow: hidden;
+}
+#overflow-auto {
+  overflow: auto;
+}
+#overflow-scroll {
+  overflow: scroll;
+}

@@ -1,0 +1,23 @@
+p {
+  border: 1px solid black;
+}
+p.item1 {
+  /* 줄 바꿈이 없음 */
+  white-space: nowrap;
+}
+
+p.item2 {
+  /* 줄 바꿈, 공백, 띄어쓰기 등 모든 것이 보여지며,
+  박스를 벗어나도 줄 바꿈이 일어나지 않음 */
+  white-space: pre;
+}
+
+p.item3 {
+  /* 줄 바꿈만 보여주며, 자동으로 줄 바꿈 */
+  white-space: pre-line;
+}
+
+p.item4 {
+  /* 줄 바꿈과 띄어쓰기 모두 보여주며, 자동으로 줄 바꿈 */
+  white-space: pre-wrap;
+}

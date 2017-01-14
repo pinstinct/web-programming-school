@@ -1,0 +1,18 @@
+.border {
+  width: 200px;
+  height: 100px;
+  margin: 5px;
+}
+#item1 {
+  border-width: 5px 15px;
+  border-style: solid;
+  border-color: green;
+}
+#item2 {
+  border-width: 3px 6px 9px 12px;
+  border-style: dotted;
+  border-color: blue;
+}
+#item3 {
+  border: 3px dashed red;
+}

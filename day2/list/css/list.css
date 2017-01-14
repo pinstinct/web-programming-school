@@ -1,0 +1,33 @@
+#style1 {
+  list-style: disc;
+}
+#style2{
+  list-style-type: circle;
+}
+#style3 {
+  list-style-type: square;
+}
+#style4 {
+  list-style-type: decimal;
+}
+#style5 {
+  list-style-type: lower-alpha;
+}
+#style6 {
+  list-style-type: upper-alpha;
+}
+#style7 {
+  list-style-type: lower-roman;
+}
+#style8 {
+  list-style-type: upper-roman;
+}
+#img {
+  list-style-image: url(../images/icon.png);
+}
+#outside {
+  list-style-position: outside;
+}
+#inside {
+  list-style-position: inside;
+}

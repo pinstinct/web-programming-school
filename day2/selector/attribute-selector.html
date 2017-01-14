@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Attribute Select</title>
+  <link rel="stylesheet" href="css/attribute-selector.css">
+</head>
+<body>
+  <section id="attr1">
+    <h3>1. E[attr]</h3>
+    <p>attr 속성이 포함된 요소 E</p>
+    <ul>
+      <li><a>Football Team Manager</a></li>
+      <li><a href="#" type="france">Wenger</a></li>
+      <li><a href="#" type="germany">Klopp</a></li>
+      <li><a href="#" type="germany">Joachim Low</a></li>
+      <li><a href="#" type="spain">Pep Guardiola</a></li>
+      <li><a href="#" type="italy">Ancelotti</a></li>
+    </ul>
+  </section>
+
+  <section id="attr2">
+    <h3>2. E[attr="val"]</h3>
+    <p>attr 속성 값이 val인 요소 E</p>
+    <ul>
+      <li><a>Football Team Manager</a></li>
+      <li><a href="#" type="france">Wenger</a></li>
+      <li><a href="#" type="germany">Klopp</a></li>
+      <li><a href="#" type="germany">Joachim Low</a></li>
+      <li><a href="#" type="spain">Pep Guardiola</a></li>
+      <li><a href="#" type="italy">Ancelotti</a></li>
+    </ul>
+  </section>
+
+  <section id="attr3">
+    <h3>3. E[attr~="val"]</h3>
+    <p>attr 속성 값에 val이 포함되거나 공백으로 분리된 val이 포함된 요소 E</p>
+    <ul>
+      <li><a>Football Team Manager</a></li>
+      <li><a href="#" type="red">Wenger</a></li>
+      <li><a href="#" type="red club">Klopp</a></li>
+      <li><a href="#" type="national red">Joachim Low</a></li>
+      <li><a href="#" type="">Pep Guardiola</a></li>
+      <li><a href="#" type="red-club">Ancelotti</a></li>
+    </ul>
+  </section>
+
+  <section id="attr4">
+    <h3>4. E[attr|="val"]</h3>
+    <p>attr 속성 값에 val이 포함되거나 val-로 시작하는 요소 E</p>
+    <ul>
+      <li><a>Football Team Manager</a></li>
+      <li><a href="#" type="red">Wenger</a></li>
+      <li><a href="#" type="red club">Klopp</a></li>
+      <li><a href="#" type="">Joachim Low</a></li>
+      <li><a href="#" type="national-red">Pep Guardiola</a></li>
+      <li><a href="#" type="red-club">Ancelotti</a></li>
+    </ul>
+  </section>
+
+  <section id="attr5">
+    <h3>5. E[attr^="val"]</h3>
+    <p>attr 속성 값에 val로 시작하는 요소 E (공백, - 포함)</p>
+    <ul>
+      <li><a>Football Team Manager</a></li>
+      <li><a href="#" type="clubarsenal">Wenger</a></li>
+      <li><a href="#" type="clubliverpool">Klopp</a></li>
+      <li><a href="#" type="nationaltem">Joachim Low</a></li>
+      <li><a href="#" type="club mancity">Pep Guardiola</a></li>
+      <li><a href="#" type="club-munchen">Ancelotti</a></li>
+    </ul>
+  </section>
+
+  <section id="attr6">
+    <h3>6. E[attr$="val"]</h3>
+    <p>attr 속성 값에 val로 끝나는 요소 E (공백, - 포함)</p>
+    <ul>
+      <li><a>Football Team Manager</a></li>
+      <li><a href="#" type="arsenalclub">Wenger</a></li>
+      <li><a href="#" type="liverpool club">Klopp</a></li>
+      <li><a href="#" type="-club">Joachim Low</a></li>
+      <li><a href="#" type="club mancity">Pep Guardiola</a></li>
+      <li><a href="#" type="club-munchen">Ancelotti</a></li>
+    </ul>
+  </section>
+
+  <section id="attr7">
+    <h3>7. E[attr*="val"]</h3>
+    <p>attr 속성 값에 val이 포함되는 요소 E (공백, -, 위치 모두 포함)</p>
+    <ul>
+      <li><a>Football Team Manager</a></li>
+      <li><a href="#" type="arsenalclub">Wenger</a></li>
+      <li><a href="#" type="clubliverpool">Klopp</a></li>
+      <li><a href="#" type="a-club">Joachim Low</a></li>
+      <li><a href="#" type="mancity club">Pep Guardiola</a></li>
+      <li><a href="#" type="club-munchen">Ancelotti</a></li>
+    </ul>
+  </section>
+</body>
+</html>

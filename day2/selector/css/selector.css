@@ -1,0 +1,59 @@
+/* 전체 선택자 */
+* {
+  padding: 0;
+  margin: 0;
+}
+
+/* 태그 선택자 */
+h1 {
+  color: red;
+}
+
+/* 클래스 선택자 */
+.section {
+  color: #333;
+  margin-bottom: 40px;
+}
+p.section-title {
+  font-size: 18px;
+}
+p.section-content {
+  font-size: 13px;
+  line-height: 13px;
+}
+
+/* 아이디 선택자 */
+#index-title {
+  font-size: 18px;
+}
+p#index-description {
+  font-size: 12px;
+  color: #999;
+}
+
+/* 그룹 선택자 */
+#index-title, #index-description {
+  text-align: center;
+}
+
+/* 하위 선택자 */
+section#descendant ul {
+  border: 1px solid black;
+}
+
+/* 자식 선택자 */
+section#child > ul {
+  border: 1px solid green;
+}
+
+/* 인접 형제 선택자 */
+#adjacent-sibling > h1 + ul {
+  background: azure;
+  color: darkblue;
+}
+
+/* 일반 형제 선택자 */
+#general-sibling > h1 ~ ul {
+  background: black;
+  color: white;
+}

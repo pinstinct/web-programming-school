@@ -1,0 +1,22 @@
+tr, td {
+  border: 1px solid black;
+  width: 30px;
+  text-align: center;
+}
+#border-collapse {
+  border-collapse: collapse;
+}
+#border-spacing {
+  border-spacing: 10px;
+}
+.empty-cells {
+  empty-cells: hide;
+}
+.layout-auto {
+  width: 100%;
+  table-layout: auto;
+}
+.layout-fixed {
+  width:450px;
+  table-layout: fixed;
+}

@@ -1,0 +1,10 @@
+/*
+selector {
+  property: value;
+}
+*/
+#external-style {
+  font-size: 14px;
+  font-weight: bold;
+  color: DarkSlateGrey;
+}

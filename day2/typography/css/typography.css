@@ -1,0 +1,109 @@
+body {
+  font-size: 14px;
+}
+h3 {
+  color: #DE1E49;
+  background-color: rgba(255,215,0,0.2);
+}
+
+p#font-serif {
+  font-family: Georiga, Times New Roman;
+}
+
+p#font-sans-serif {
+  font-family: Arial, Helvetica;
+}
+
+p#font-monospace {
+  font-family: monospace;
+}
+
+p#size-px {
+  font-size: 14px;
+}
+
+p#size-em {
+  font-size: 2em;
+}
+
+p#style-italic {
+  font-style: italic;
+}
+
+p#style-oblique {
+  font-style: oblique;
+}
+
+p#weight-bold {
+  font-weight: bold;
+}
+
+p#weight-number {
+  font-weight: 700;
+}
+
+p#height-number {
+  line-height: 1.5;
+}
+
+p#height-px {
+  line-height: 25px;
+}
+
+p#decoration-underline {
+  text-decoration: underline;
+}
+
+p#decoration-overline {
+  text-decoration: overline;
+}
+
+p#decoration-line-through {
+  text-decoration: line-through;
+}
+
+p#align-left {
+  text-align: left;
+}
+
+p#align-right {
+  text-align: right;
+}
+p#align-justify {
+  text-align: justify;
+}
+
+p#indent-em {
+  text-indent: 10em;
+}
+
+p#indent-minus {
+  text-indent: -1em;
+}
+
+p#transform-capital {
+  text-transform: capitalize;
+}
+
+p#transform-upper {
+  text-transform: uppercase;
+}
+p#transform-lower {
+  text-transform: lowercase;
+}
+
+p#letter-spacing-px {
+  letter-spacing: 10px;
+}
+
+p#letter-spacing-em {
+  letter-spacing: 0.5em;
+}
+
+p#word-spacing-px {
+  word-spacing: 10px
+}
+
+p#word-spacing-em {
+  word-spacing: 2em;
+}
