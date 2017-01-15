@@ -1,0 +1,14 @@
+body {
+  width: 550px;
+}
+.float-element {
+  width: 100px;
+  height: 100px;
+  background-color: yellowgreen;
+  color: white;
+  float: left;
+  margin: 5px;
+}
+.clear-left {
+  clear: left;
+}

@@ -1,0 +1,31 @@
+div {
+  width: 33%;
+  height: 100px;
+  color: white;
+}
+.element1 {
+  background-color: darkgreen;
+}
+.element2 {
+  background-color: darkblue;
+}
+.element3 {
+  background-color: darkorange;
+}
+.float-right {
+  float: right;
+}
+.float-left {
+  float: left;
+}
+#parent-element {
+  width: 500px;
+  height: 300px;
+  border: 1px solid black;
+}
+#child-element {
+  width: 200px;
+  height: 100px;
+  color: white;
+
+}

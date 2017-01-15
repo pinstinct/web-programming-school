@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>float</title>
+  <link rel="stylesheet" href="css/float.css">
+</head>
+<body>
+  <h3>float: None</h3>
+  <div class="element1">1</div>
+  <div class="element2">2</div>
+  <div class="element3">3</div>
+
+  <h3>float: right</h3>
+  <h4>첫번째 요소에 float: right을 적용한 결과</h4>
+  <p>기존 항목들보다 위쪽에 떠서 두번째 요소가 빈 공간으로 올라온다.</p>
+  <div class="element1 float-right">1</div>
+  <div class="element2">2</div>
+  <div class="element3">3</div>
+
+  <h3>float: right</h3>
+  <h4>두번째 요소에 float: right을 적용한 결과</h4>
+  <p>두번째 요소가 뜨며 없어진 공간에 세번째 요소가 들어온다. 하지만 첫번째 요소가 block요소로, 가로 너비를 차지하므로 윗 공간에 올라가지 못한다.</p>
+  <div class="element1">1</div>
+  <div class="element2 float-right">2</div>
+  <div class="element3">3</div>
+
+  <h3>float: right</h3>
+  <h4>전체에 float: right을 적용한 결과</h4>
+  <p>모든 요소가 right로 뜨며 block 속성을 잃고 차례대로 배치된다.</p>
+  <div class="element1 float-right">1</div>
+  <div class="element2 float-right">2</div>
+  <div class="element3 float-right">3</div>
+
+  <div></div>
+
+  <h3>float: left, right</h3>
+  <h4>첫번째/두번째 요소에 float:left, 세번째 요소에 float: right을 적용한 결과</h4>
+  <p>왼쪽부터 left속성끼리 차례대로 정렬되고, 오른쪽에 right 속성이 정렬된다.</p>
+  <div class="element1 float-left">1</div>
+  <div class="element2 float-left">2</div>
+  <div class="element3 float-right">3</div>
+
+  <h3>float: left</h3>
+  <h4>부모 요소가 있고, 자식 요소 전체에 float: left을 적용한 결과</h4>
+  <p>자식 요소가 부모 요소보다 가로가 길 경우, 아래로 내려간다</p>
+  <div id="parent-element">
+    <div class="element1 float-left" id="child-element">1</div>
+    <div class="element2 float-left" id="child-element">2</div>
+    <div class="element3 float-left" id="child-element">3</div>
+  </div>
+</body>
+</html>

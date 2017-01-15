@@ -1,0 +1,32 @@
+.float-frame {
+  width: 300px;
+  background-color: #eee;
+  border: 1px solid #ddd;
+  /*padding: 10px;*/
+}
+.float-unit {
+  width: 50px;
+  background-color: #333;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  padding: 15px 0;
+  margin-right: 5px;
+}
+.float-left {
+  float: left;
+}
+.overflow {
+  overflow: auto;
+  /* overflow: visible때, 인식하지 못하던 float 요소와 자식 요소의 margin값을 인식 */
+  overflow: hidden;
+}
+/* 가상선택자 after는 해당 요소 뒤에 content가 생성
+(임의 요소 삽입과 같은 역할) */
+.clearfix::after {
+  content: ' ';
+  display: block;
+  height: 0;
+  clear: both;
+}

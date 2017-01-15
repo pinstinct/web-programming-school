@@ -1,0 +1,40 @@
+html, body {
+  padding: 0;
+  margin: 0;
+}
+p {
+  height: 20px
+}
+
+div {
+  width: 400px;
+  height: 200px;
+  padding: 10px;
+  border: 1px solid black;
+}
+.relative1 {
+  position: relative;
+}
+.relative2 {
+  position: relative;
+  /* relative 속성이 있기 때문에, 아래의 값이 적용 됨 */
+  top: 30px;
+  left: 20px;
+}
+.fixed {
+  position: fixed;
+  width: 120px;
+  height: 50px;
+  background-color: darkgreen;
+  right: 10px;
+  bottom: 10px;
+}
+.absolute {
+  /* position이 static이 아닌 가장 가까운 부모는 relative1 */
+  position: absolute;
+  width: 150px;
+  height: 60px;
+  background-color: darkgray;
+  right: 0;
+  bottom: 30px;
+}

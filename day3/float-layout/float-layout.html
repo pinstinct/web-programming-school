@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Float Layout</title>
+  <link rel="stylesheet" href="css/float-layout.css">
+</head>
+<body>
+  <h3>None</h3>
+  <div class="float-frame">
+    <div class="float-unit">A</div>
+    <div class="float-unit">B</div>
+    <div class="float-unit">C</div>
+    <div class="float-unit">D</div>
+  </div>
+
+  <h3>A, B, C, D { float: left }</h3>
+  <p>자식이 모두 float속성에 따라 배열되면서, 부모요소의 height가 인식되지 않는다.</p>
+  <p>이럴 경우, 4가지 처리 방법이 있다.</p>
+  <div class="float-frame">
+    <div class="float-unit float-left">A</div>
+    <div class="float-unit float-left">B</div>
+    <div class="float-unit float-left">C</div>
+    <div class="float-unit float-left">D</div>
+  </div>
+
+  <br style="clear: both;">
+
+  <h4>1. float를 해제할 임의 요소 삽입</h4>
+  <div class="float-frame">
+    <div class="float-unit float-left">A</div>
+    <div class="float-unit float-left">B</div>
+    <div class="float-unit float-left">C</div>
+    <div class="float-unit float-left">D</div>
+    <br style="clear: both;">
+  </div>
+
+  <h4>2. 부모에 overflow 설정</h4>
+  <div class="float-frame overflow">
+    <div class="float-unit float-left">A</div>
+    <div class="float-unit float-left">B</div>
+    <div class="float-unit float-left">C</div>
+    <div class="float-unit float-left">D</div>
+  </div>
+
+  <h4>3. 부모에 float 설정</h4>
+  <div class="float-frame float-left">
+    <div class="float-unit float-left">A</div>
+    <div class="float-unit float-left">B</div>
+    <div class="float-unit float-left">C</div>
+    <div class="float-unit float-left">D</div>
+  </div>
+
+  <br style="clear: both;">
+
+  <h4>4. 가상선택자 이용 (실제로 많이 쓰이는 방법)</h4>
+  <div class="float-frame clearfix">
+    <div class="float-unit float-left">A</div>
+    <div class="float-unit float-left">B</div>
+    <div class="float-unit float-left">C</div>
+    <div class="float-unit float-left">D</div>
+  </div>
+
+</body>
+</html>
