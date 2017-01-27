@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/index.css">
+  <title>[다방: 방이 많다] 원룸·오피스텔 전국 최다 전월세 매물 정보</title>
+</head>
+<body>
+  <header id="top-header">
+    <img src="images/logo.png" class="header-logo" alt="다방(Logo)">
+    <nav>
+      <ul id="top-nav-left-list" class="nav-list">
+        <li><img src="images/top_nav_icon_pro.png" alt=""></li>
+        <li class="nav-pipeline"> | </li>
+        <li><img src="images/top_nav_icon_pay.png" alt=""></li>
+      </ul>
+      <ul id="top-nav-right-list" class="nav-list">
+        <li><a href="">방 검색</a></li>
+        <li><a href="">관심목록</a></li>
+        <li><a href="">방 등록</a></li>
+        <li class="mgl-30 item-small"><a href="">공인중개사 회원가입</a></li>
+        <li class="item-small"><a href="">회원가입 및 로그인</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div id="wrap">
+    <!--
+      #index-search와 #index-search-image에서,
+      각각의 background-image는 가로축에서 가운데에 와야함
+     -->
+    <div id="index-search">
+      <div id="index-search-image"></div>
+      <div id="index-search-bottom">
+        <div id="index-search-form">
+          <input type="text" placeholder="관심지역 또는 매물번호를 검색해보세요">
+          <button>방 검색</button>
+        </div>
+      </div>
+    </div>
+
+    <!--
+      테마검색 섹션
+        섹션의 가로길이 960px로 작업
+          h2 제목
+          p 설명
+        각 칸은 300px, 가운데 2칸의 여백은 30px씩
+    -->
+    <section id="theme-search">
+      <div class="text-center">
+        <h1>테마 검색</h1>
+        <p>다방의 다양한 검색조건으로 방을 찾아보세요</p>
+      </div>
+
+      <!-- 테마 리스트 -->
+      <ul id="theme-list">
+        <!--
+        리스트 아이템
+          클래스명으로 배경이미지 전환
+        -->
+        <li class="pet">
+          <!-- 클릭할 요소이기 때문에 a태그 사용 -->
+          <a href="">
+            <!-- 백그라운드 이미지를 가질 요소 -->
+            <div class="bg"></div>
+            <!-- 반투명 검정 마스크를 가질 요소 -->
+            <div class="mask"></div>
+            <!-- 테마의 설명 텍스트를 가질 요소 -->
+            <div class="theme-description">
+              <h1>반려동물</h1>
+              <p>Lorem ipsum dolor sit amet, consectetur.</p>
+            </div>
+          </a>
+        </li>
+
+        <li class="guarantee">
+          <a href="">
+            <div class="bg"></div>
+            <div class="mask"></div>
+            <div class="theme-description">
+              <h1>반려동물</h1>
+              <p>Lorem ipsum dolor sit amet, consectetur.</p>
+            </div>
+          </a>
+        </li>
+
+        <li class="guarantee">
+          <a href="">
+            <div class="bg"></div>
+            <div class="mask"></div>
+            <div class="theme-description">
+              <h1>반려동물</h1>
+              <p>Lorem ipsum dolor sit amet, consectetur.</p>
+            </div>
+          </a>
+        </li>
+        <li class="guarantee">
+          <a href="">
+            <div class="bg"></div>
+            <div class="mask"></div>
+            <div class="theme-description">
+              <h1>반려동물</h1>
+              <p>Lorem ipsum dolor sit amet, consectetur.</p>
+            </div>
+          </a>
+        </li>
+        <li class="guarantee">
+          <a href="">
+            <div class="bg"></div>
+            <div class="mask"></div>
+            <div class="theme-description">
+              <h1>반려동물</h1>
+              <p>Lorem ipsum dolor sit amet, consectetur.</p>
+            </div>
+          </a>
+        </li>
+        <li class="guarantee">
+          <a href="">
+            <div class="bg"></div>
+            <div class="mask"></div>
+            <div class="theme-description">
+              <h1>반려동물</h1>
+              <p>Lorem ipsum dolor sit amet, consectetur.</p>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </section>
+
+    <div class="banner">
+      <div class="banner-image img1"></div>
+    </div>
+
+    <!-- 사이트맵을 나타냄 -->
+    <div class="sitemap clearfix">
+      <!--
+      사이트맵은 5개의 Column으로 이루어져있음
+      각 col의 속성은 .sitemap-col이 가짐
+       -->
+      <div class="sitemap-col">
+        <!-- 각 col안에는 여러개의 ul이 존재할 수 있음 -->
+        <ul>
+          <!-- 첫 번째 아이템은 제목으로, .title속성으로 분리 -->
+          <li class="title">형태별 검색</li>
+          <li><a href="#">원룸</a></li>
+          <li><a href="#">투룸</a></li>
+          <li><a href="#">쓰리룸</a></li>
+          <li><a href="#">오피스텔</a></li>
+          <li><a href="#">아파트</a></li>
+        </ul>
+      </div>
+
+      <div class="sitemap-col">
+        <ul>
+          <li class="title">형태별 검색</li>
+          <li><a href="#">원룸</a></li>
+          <li><a href="#">투룸</a></li>
+          <li><a href="#">쓰리룸</a></li>
+          <li><a href="#">오피스텔</a></li>
+          <li><a href="#">아파트</a></li>
+        </ul>
+      </div>
+
+      <div class="sitemap-col">
+        <ul>
+          <li class="title">형태별 검색</li>
+          <li><a href="#">원룸</a></li>
+          <li><a href="#">투룸</a></li>
+          <li><a href="#">쓰리룸</a></li>
+          <li><a href="#">오피스텔</a></li>
+          <li><a href="#">아파트</a></li>
+        </ul>
+      </div>
+
+      <div class="sitemap-col">
+        <ul>
+          <li class="title">형태별 검색</li>
+          <li><a href="#">원룸</a></li>
+          <li><a href="#">투룸</a></li>
+          <li><a href="#">쓰리룸</a></li>
+          <li><a href="#">오피스텔</a></li>
+          <li><a href="#">아파트</a></li>
+        </ul>
+
+        <ul>
+          <li class="title">형태별 검색</li>
+          <li><a href="#">원룸</a></li>
+          <li><a href="#">투룸</a></li>
+          <li><a href="#">쓰리룸</a></li>
+          <li><a href="#">오피스텔</a></li>
+          <li><a href="#">아파트</a></li>
+        </ul>
+      </div>
+
+      <div class="sitemap-col">
+        <ul>
+          <li class="title">형태별 검색</li>
+          <li><a href="#">원룸</a></li>
+          <li><a href="#">투룸</a></li>
+          <li><a href="#">쓰리룸</a></li>
+          <li><a href="#">오피스텔</a></li>
+          <li><a href="#">아파트</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- 인덱스페이지의 하단 네비게이션 메뉴 (메뉴역할을 하므로 nav요소 사용) -->
+    <nav id="index-bottom-nav2" class="clearfix">
+      <!-- 메뉴 리스트 (ul) -->
+      <ul class="clearfix">
+        <li><a href="#">회사소개</a></li>
+        <li><a href="#">공인중개사 회원가입</a></li>
+        <li><a href="#">이용약관</a></li>
+        <li><a href="#" class="red">개인정보취급방침</a></li>
+        <li><a href="#">위치기반약관</a></li>
+        <li><a href="#">매물관리규정</a></li>
+        <li><a href="#">자동저장 서비스</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <footer>
+    <!-- 내부 내용은 960px안에 들어오도록 한번 더 감쌈 -->
+    <div class="footer-content">
+      <!-- 로고 이미지 -->
+      <img src="images/ci.png" alt="" class="footer-ci-image">
+      <!-- ul요소들을 담은 컨테이너 -->
+      <div class="content-list-container">
+        <ul>
+          <li class="title">스테이션3</li>
+          <li>대표 : 한유순, 최인녕</li>
+          <li>주소 : 서울시 서초구 서초대로 301 동익성봉빌딩 11층 (주)스테이션3</li>
+          <li>전화 : 1899-6840 팩스 : 02-554-9774</li>
+        </ul>
+        <ul>
+          <li>사업자 번호 : 220-88-59156</li>
+          <li>통신판매업신고번호 : 제2013-서울 강남-02884호</li>
+          <li>프로모션/사업 제휴문의 : biz@station3.co.kr</li>
+        </ul>
+        <ul>
+          <li>Station3, Inc. All rights reserved.</li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
